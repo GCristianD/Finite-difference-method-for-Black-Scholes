@@ -12,7 +12,9 @@
 #include <stdio.h>
 #include "Option.hpp"
 
-// This class includes virtual functions for the coefficients and boundary conditions of a parabolic partial differential equation in variables (t,x). It also specifies the domain [0,T]*[xlow,xup] through the variables T,xlow,xup.
+// This class includes virtual functions for the coefficients and boundary conditions of a
+// parabolic partial differential equation in variables (t,x). It also specifies the domain
+// [0,T]*[xlow,xup] through the variables T,xlow,xup.
 class ParabEq
 {
 public:
@@ -28,7 +30,9 @@ public:
     virtual double flow(double t)=0;
 };
 
-// The Black Scholes equation is a particular case of a parabolic PDE. PModel and POption are used to pass the parameters of the model. https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_equation
+// The Black Scholes equation is a particular case of a parabolic PDE. PModel and POption are
+// used to pass the parameters of the model.
+// See https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_equation
 class BlackScholesEq: public ParabEq
 {
 public:

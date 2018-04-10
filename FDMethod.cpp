@@ -22,7 +22,8 @@ FDMethod::FDMethod(ParabEq* PPDE_, int Tpoints, int Xpoints)
     for (int i=0; i<=max_i; i++) W[i].resize(max_j+1);
 }
 
-// Approximates the solutions at points (t,x) which are not on the grid by taking a weighted average of the nearby 4 points on the grid. Assumes W is already defined (i.e. Solve was called).
+// Approximates the solutions at points (t,x) which are not on the grid by taking a weighted
+// average of the nearby 4 points on the grid. Assumes W is already defined (i.e. Solve was called).
 double FDMethod::v(double t, double x)
 {
     int i=(int)(t/dt);

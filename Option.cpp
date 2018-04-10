@@ -9,7 +9,8 @@
 #include "Option.hpp"
 #include <cmath>
 
-// The formulas for the payoff of a european put option. See https://en.wikipedia.org/wiki/Put_option 
+// The formulas for the payoff of a european put option.
+// See https://en.wikipedia.org/wiki/Put_option
 double PutOption::Pay(double z)
 {
     if (z>K) {return 0.0;}

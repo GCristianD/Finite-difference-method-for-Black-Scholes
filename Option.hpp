@@ -33,7 +33,8 @@ public:
 };
 
 
-// This class implements the payoff and the boundary conditions of the Put Options. For the explanation of the formulas see https://en.wikipedia.org/wiki/Put_option 
+// This class implements the payoff and the boundary conditions of the Put Options.
+// For the explanation of the formulas see https://en.wikipedia.org/wiki/Put_option
 class PutOption: public Option
 {
 public:

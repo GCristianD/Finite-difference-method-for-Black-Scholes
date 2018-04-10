@@ -20,7 +20,8 @@ BlackScholesEq::BlackScholesEq(BlackScholes* PModel_, Option* POption_ )
     
 }
 
-// Defines the formulas of the coefficients of the Black-Scholes PDE, see https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_equation
+// Defines the formulas of the coefficients of the Black-Scholes PDE,
+// see https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_equation
 
 double BlackScholesEq::a1(double t, double x)
 {    return -pow(x* PModel->sigma,2.0)/2; }

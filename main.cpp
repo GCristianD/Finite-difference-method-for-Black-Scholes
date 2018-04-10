@@ -13,8 +13,11 @@
 #include "FDMethod.hpp"
 using namespace std;
 
-//  We implement the pricing of a European Put option (https://en.wikipedia.org/wiki/Put_option ) based on numerically solving the Black-Scholes Partial Differential Equation https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_equation by the explicit finite difference method.
-//  T = expiry date,  K = strike price, S = price of the stock, r = interest rate, sigma=volatility
+// We implement the pricing of a European Put option (https://en.wikipedia.org/wiki/Put_option )
+// based on numerically solving the Black-Scholes Partial Differential Equation
+// https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_equation by the explicit
+// finite difference method.
+// T = expiry date,  K = strike price, S = price of the stock, r = interest rate, sigma=volatility
 
 int main()
 {
